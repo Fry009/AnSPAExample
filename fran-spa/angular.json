@@ -28,7 +28,7 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "/src/assets/application.scss"
+                            "src/assets/application.scss"
                         ],
                         "scripts": [
                             "src/assets/js/src/lib/jquery-2.2.4.min.js",
