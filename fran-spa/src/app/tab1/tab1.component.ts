@@ -9,7 +9,11 @@ export class Tab1Component implements OnInit {
 
   constructor() { }
 
+  nStars:number;
+
+
   ngOnInit(): void {
+    this.nStars=5;
   }
 
 }
