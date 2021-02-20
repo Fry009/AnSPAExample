@@ -3,7 +3,7 @@
     <div class="grid">
 
         <div class="grid__col-12">
-            TITULO
+            {{hotelCard.title}}
         </div>
 
 
@@ -11,8 +11,8 @@
     <!--header card-->
     <!--listado caarcteristicas-->
     <div class="grid">
-        <ul>
-            <li>Item 1</li>
+        <ul >
+            <li *ngFor="item of hotelCard?.activities"> Lorem Ipsum </li>
         </ul>
     </div>
     <!--/listado caarcteristicas-->
