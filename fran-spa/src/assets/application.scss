@@ -504,17 +504,23 @@ div.tab button.active {
     margin-right: 2%;
 }
 
-.hotelcard {
-    background-color: #f1f1f1 !important;
-    padding: 6px 12px;
-    border: 1px solid rgb(173, 173, 173);
-    border-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
+
 
 .tabcontent .star {
     padding-left: 2%;
+}
+
+.hotelcard {
+  background-color: #f1f1f1 !important;
+  padding: 6px 12px;
+  border: 1px solid rgb(173, 173, 173);
+  border-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.hotelcard:hover {
+  border: 1px solid #06016d;
 }
 
 .hotel {
