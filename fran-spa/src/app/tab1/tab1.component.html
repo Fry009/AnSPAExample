@@ -8,12 +8,13 @@
             </span>
         </div>
         <!--/TITULO-->
-    </div>   
+
+    </div>
         <!--Tarjetas-->
-        <div class="grid">
-            <div class="grid__col-3">        
-                <app-hotel-card></app-hotel-card>
-            </div>      
+        <div class="grid" *ngFor="let hotelCard of hotelCards">
+            <div class="grid__col-3" >
+                <app-hotel-card [hotelCard]="hotelCard"></app-hotel-card>
+            </div>
         </div>
 
         <!--tarjetas-->

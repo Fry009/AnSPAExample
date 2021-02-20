@@ -18,24 +18,29 @@ export class Tab1Component implements OnInit {
 
   ngOnInit(): void {
     this.nStars=5;
+    this.hotelCards=[];
     this.loadHotelCardInfo();
 
   }
 
   loadHotelCardInfo(){
     let hotelCard:HotelCard;
+    hotelCard ={} as HotelCard;
+    debugger;
     hotelCard.title="Solo alojamiento";
     hotelCard.activities=["Sin regimen","Botella de agua de bienvenida"];
     this.hotelCards.push(hotelCard);
     let hotelCard2:HotelCard;
+    hotelCard2 ={} as HotelCard;
     hotelCard2.title="Alojamiento y Desayuno";
     hotelCard2.activities=["Desayuno buffet completo"];
     this.hotelCards.push(hotelCard2);
     let hotelCard3:HotelCard;
+    hotelCard3 ={} as HotelCard;
     hotelCard3.title="Lorem Ipsum";
     hotelCard3.activities=["Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum"];
     this.hotelCards.push(hotelCard3);
-    
+
 
   }
 
