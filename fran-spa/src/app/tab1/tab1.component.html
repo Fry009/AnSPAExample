@@ -1,0 +1,21 @@
+<div class="tabcontent">
+    <div class="grid">
+        <!--TITULO-->
+        <div class="grid__col-12 hotel">
+            <span style="margin-right: 40px">HOTEL Mieres del Carmín Apartamentos</span>
+            <span *ngFor="let i of [].constructor(5)">
+                <img src="../../assets/img/star-orange.svg">
+            </span>
+        </div>
+        <!--/TITULO-->
+
+    </div>
+        <!--Tarjetas-->
+        <div class="grid">
+            <div class="grid__col-2"  *ngFor="let hotelCard of hotelCards" >
+                <app-hotel-card [hotelCard]="hotelCard"></app-hotel-card>
+            </div>
+        </div>
+
+        <!--tarjetas-->
+</div>
