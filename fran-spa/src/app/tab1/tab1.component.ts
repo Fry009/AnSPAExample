@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { HotelCard } from '../model/hotelCard';
 
 @Component({
@@ -14,10 +14,12 @@ export class Tab1Component implements OnInit {
 
   nStars:number;
   hotelCards:HotelCard[];
+  isActive:number;
 
 
   ngOnInit(): void {
     this.nStars=5;
+    this.isActive=0;
     this.hotelCards=[];
     this.loadHotelCardInfo();
 
@@ -44,8 +46,41 @@ export class Tab1Component implements OnInit {
     hotelCard4.title="Lorem Ipsum";
     hotelCard4.activities=["Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum"];
     this.hotelCards.push(hotelCard4);
+  }
+
+
+
+  selectRegimenSelect($event){
 
 
   }
+
+  selectRegimenActive(index){
+    this.isActive=index;
+  }
+
+
+  onHotelCardGroupClick(id){
+      let radioButtons= document.body.querySelectorAll(".radio-input-grp");
+      debugger;
+      radioButtons.forEach(radioButton=>{
+        if(radioButton.id==id){
+          radioButton.className += " active";
+        } else{
+          radioButton.classList.remove("active");
+        }
+      });
+
+      // if a Button already has Class: .active
+      /*if( isCertainRadioAlreadyActive ) {
+        isCertainRadioAlreadyActive.classList.remove("active");
+      }
+      clickedElement.className += " active";
+    }*/
+  }
+
+
+
+
 
 }
