@@ -18,7 +18,7 @@ export class HotelCardComponent implements OnInit {
     // this.hotelCard.title="";
     // this.hotelCard.activities=[""];
     let aux="noseke";
-    debugger;
+
 
   }
 

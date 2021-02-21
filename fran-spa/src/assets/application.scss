@@ -163,6 +163,7 @@ $default-grid-columns: 12;
 $default-grid-gutter: 2%;
 .grid {
     @include grid($gutter: $default-grid-gutter);
+    //@include grid($justify-content: flex-end);
     @for $i from 1 through $default-grid-columns {
         >.grid__col-#{$i} {
             @include grid-col($col: $i, $grid-columns: $default-grid-columns, $gutter: $default-grid-gutter);
@@ -184,6 +185,7 @@ $default-grid-gutter: 2%;
     min-height: 600px;
     cursor: pointer;
 }
+
 
 @media (max-width: 320px) {
     .grid {

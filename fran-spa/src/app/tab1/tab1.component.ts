@@ -26,7 +26,6 @@ export class Tab1Component implements OnInit {
   loadHotelCardInfo(){
     let hotelCard:HotelCard;
     hotelCard ={} as HotelCard;
-    debugger;
     hotelCard.title="Solo alojamiento";
     hotelCard.activities=["Sin regimen","Botella de agua de bienvenida"];
     this.hotelCards.push(hotelCard);
@@ -40,6 +39,11 @@ export class Tab1Component implements OnInit {
     hotelCard3.title="Lorem Ipsum";
     hotelCard3.activities=["Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum"];
     this.hotelCards.push(hotelCard3);
+    let hotelCard4:HotelCard;
+    hotelCard4 ={} as HotelCard;
+    hotelCard4.title="Lorem Ipsum";
+    hotelCard4.activities=["Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum"];
+    this.hotelCards.push(hotelCard4);
 
 
   }
