@@ -7,6 +7,7 @@ import { Tab1Component } from './tab1/tab1.component';
 import { Tab2Component } from './tab2/tab2.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HotelCardComponent } from './components/hotel-card/hotel-card.component';
+import { HotelCardExtendedComponent } from './components/hotel-card-extended/hotel-card-extended.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HotelCardComponent } from './components/hotel-card/hotel-card.component
     Tab2Component,
     HeaderComponent,
     HotelCardComponent,
+    HotelCardExtendedComponent,
 
   ],
   imports: [
