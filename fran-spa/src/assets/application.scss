@@ -623,6 +623,7 @@ input[type="radio"]:checked {
     width: 100%;
     background-color: white;
     border: 1px solid grey;
+    transition: max-height 0.2s ease-out;
 }
 
 .btnCollapse {
@@ -763,15 +764,20 @@ div div .valores {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
+  //text-align: left;
+
+  display: inline-block;
   border: none;
-  outline: none;
-  transition: 0.4s;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 1%;
+  margin-left: 0%;
+
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -781,19 +787,15 @@ div div .valores {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
+  //padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+
 }
 
-.accordion:after {
+.btnCollapse:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
 }
 
 .active:after {

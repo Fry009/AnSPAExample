@@ -15,7 +15,7 @@ export class HotelCardExtendedComponent implements OnInit {
 
 
   toggleAccordion(){
-    var acc = document.getElementsByClassName("accordion");
+    var acc = document.getElementsByClassName("btnCollapse");
     var i;
 
     for (i = 0; i < acc.length; i++) {
