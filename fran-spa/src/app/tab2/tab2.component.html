@@ -1,4 +1,7 @@
 <div class="tabcontent">
-  <app-hotel-card-extended ></app-hotel-card-extended>
+  <div *ngFor="let hotelCardExtended of hotelCardExtendedList">
+    <app-hotel-card-extended [hotelCardExtended]="hotelCardExtended"></app-hotel-card-extended>
+  </div>
+
 </div>
 

@@ -16,13 +16,13 @@ export class HotelCardExtendedComponent implements OnInit {
 
   ngOnInit(): void {
     this.toggleAccordion();
-    this.hotelCardExtended={
-      activities:[],
-      description:"",
-      supertitle:"",
-      title:"",
-      urlImage:""
-    };
+    // this.hotelCardExtended={
+    //   activities:[],
+    //   description:"",
+    //   supertitle:"",
+    //   title:"",
+    //   urlImage:""
+    // };
   }
 
 
