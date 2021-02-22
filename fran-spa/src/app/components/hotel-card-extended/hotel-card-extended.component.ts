@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { HotelCardExtended } from 'src/app/model/hotelCardExtended';
 
 @Component({
   selector: 'app-hotel-card-extended',
@@ -11,9 +12,17 @@ export class HotelCardExtendedComponent implements OnInit {
 
   /*variables de entrada*/
 
+@Input() hotelCardExtended: HotelCardExtended;
 
   ngOnInit(): void {
     this.toggleAccordion();
+    this.hotelCardExtended={
+      activities:[],
+      description:"",
+      supertitle:"",
+      title:"",
+      urlImage:""
+    };
   }
 
 
