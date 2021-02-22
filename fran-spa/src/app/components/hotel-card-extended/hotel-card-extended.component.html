@@ -25,10 +25,11 @@
         <div class="grid__col-12" >
             <div >{{hotelCardExtended.description}}</div>
         </div>
+
             <!--/descripcion-->
             <div class="grid__col-12">
               <button #accordeon class="btnCollapse" (click)="toggleThisAccordion(accordeon)"><span class="info">Mostrar mas Informacion y Condiciones</span></button>
-              <div class="grid__col-12">
+
               <div class="collapse">
                 <div class="grid--no-gutter">
                   <div class="grid__col-12">
@@ -39,17 +40,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="grid--no-gutter">
-                  <div class="grid__col-12" style="margin: auto;">
+                <div class="grid--no-gutter" >
+                  <div class="grid__col-12" style="">
                     <ul  *ngFor="let activity of hotelCardExtended.activities">
-                      <li>{{activity}}</li>
+                      <li >{{activity}}</li>
                     </ul>
                   </div>
                 </div>
               </div>
-              </div>
+
             </div>
           </div>
+
             <!--accordeon secundario mostrar mas-->
 
             <!--/accordeon secundario mostrar mas-->
