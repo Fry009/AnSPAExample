@@ -762,26 +762,10 @@ div div .valores {
 }
 
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  //text-align: left;
 
-  display: inline-block;
-  border: none;
-  outline: 0;
-  padding: 8px 16px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-align: left;
-  cursor: pointer;
-  white-space: nowrap;
-  margin: 1%;
-  margin-left: 0%;
-
-}
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active, .btnCollapse:hover {
   background-color: #ccc;
 }
 
