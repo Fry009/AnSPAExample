@@ -6,7 +6,7 @@ import { Tab2Component } from './tab2/tab2.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/tab2', pathMatch: 'full' },
+  { path: '', redirectTo: '/tab1', pathMatch: 'full' },
   { path: 'tab1', component: Tab1Component },
   { path: 'tab2', component: Tab2Component },
 ];

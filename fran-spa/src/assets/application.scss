@@ -163,6 +163,7 @@ $default-grid-columns: 12;
 $default-grid-gutter: 2%;
 .grid {
     @include grid($gutter: $default-grid-gutter);
+    //@include grid($justify-content: flex-end);
     @for $i from 1 through $default-grid-columns {
         >.grid__col-#{$i} {
             @include grid-col($col: $i, $grid-columns: $default-grid-columns, $gutter: $default-grid-gutter);
@@ -184,6 +185,7 @@ $default-grid-gutter: 2%;
     min-height: 600px;
     cursor: pointer;
 }
+
 
 @media (max-width: 320px) {
     .grid {
@@ -621,6 +623,7 @@ input[type="radio"]:checked {
     width: 100%;
     background-color: white;
     border: 1px solid grey;
+    transition: max-height 0.2s ease-out;
 }
 
 .btnCollapse {
@@ -756,4 +759,45 @@ div div .valores {
     @include roboto-slab-rutina-18;
     font-size: 16px !important;
     margin-left: -23%;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  //text-align: left;
+
+  display: inline-block;
+  border: none;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 1%;
+  margin-left: 0%;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  //padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+
+}
+
+.btnCollapse:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }

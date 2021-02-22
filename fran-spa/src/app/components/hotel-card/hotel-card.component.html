@@ -13,7 +13,7 @@
     <div class="grid">
       <div class="grid__col-12">
         <ul >
-          <li *ngFor="item of hotelCard?.activities"> <span>Lorem Ipsum </span></li>
+          <li *ngFor="let item of hotelCard?.activities"> <span>{{item}} </span></li>
       </ul>
       </div>
     </div>
@@ -21,7 +21,7 @@
 
     <div class="grid checkRegimen">
         <div class="grid__col-12">
-                <input type="radio">Elegir regimen
+                <input type="radio" name="regimen">Elegir regimen
         </div>
     </div>
 </div>
