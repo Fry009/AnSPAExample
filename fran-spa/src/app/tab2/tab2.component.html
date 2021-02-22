@@ -1,0 +1,27 @@
+<div class="tabcontent">
+  <div class="grid-no-gutter">
+    <div class="grid__col-12">
+      <span class="exclusivo">HOTELES.COM</span>
+      <button #accordeon class="btnCollapse" (click)="toggleThisAccordion(accordeon)"><span class="info">Mejora tu
+          estancia</span> <span class="opcional">Opcional</span></button>
+
+      <div class="collapse">
+        <div *ngFor="let hotelCardExtended of hotelCardExtendedList">
+          <app-hotel-card-extended [hotelCardExtended]="hotelCardExtended"></app-hotel-card-extended>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="grid-no-gutter">
+    <div class="grid__col-12">
+      <span class="exclusivo">HOTELES.COM</span>
+      <button #accordeon2 class="btnCollapse" (click)="toggleThisAccordion(accordeon2)"><span class="info">Servicios de habitacion</span><span class="opcional">Opcional</span></button>
+      <div class="collapse">
+        <div *ngFor="let hotelCardExtended of hotelCardExtendedList">
+          <app-hotel-card-extended [hotelCardExtended]="hotelCardExtended"></app-hotel-card-extended>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

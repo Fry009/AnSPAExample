@@ -1,0 +1,67 @@
+
+<div class="box">
+  <div class="grid">
+    <!--imagen>-->
+    <div class="grid__col-2">
+    <div class="imgEstancia">
+      <!-- <img src="./../../../assets/img/img1.png" alt="Girl in a jacket" width="270" height="180"> -->
+      <img src="{{hotelCardExtended.urlImage}}" alt="Girl in a jacket" width="270" height="180">
+    </div>
+    </div>
+    <!--/imagen-->
+
+    <div class="grid__col-10">
+
+      <div class="grid--no-gutter">
+            <!--titulo-->
+            <div class="rutinaDiv">
+        <div class="grid__col-12">
+            <p>
+              {{hotelCardExtended.title}}
+            </p>
+        </div>
+            <!--/titulo-->
+                <!--descripcion-->
+        <div class="grid__col-12" >
+            <div >{{hotelCardExtended.description}}</div>
+        </div>
+
+            <!--/descripcion-->
+            <div class="grid__col-12">
+              <button #accordeon class="btnCollapse" (click)="toggleThisAccordion(accordeon)"><span class="info">Mostrar mas Informacion y Condiciones</span></button>
+
+              <div class="collapse">
+                <div class="grid--no-gutter">
+                  <div class="grid__col-12">
+                    <div class="incluye">
+                      <div class="incluyeTitle">
+                        Incluye
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid--no-gutter" >
+                  <div class="grid__col-12" style="">
+                    <ul  *ngFor="let activity of hotelCardExtended.activities">
+                      <li >{{activity}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+            <!--accordeon secundario mostrar mas-->
+
+            <!--/accordeon secundario mostrar mas-->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+

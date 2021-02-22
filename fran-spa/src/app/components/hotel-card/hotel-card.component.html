@@ -1,0 +1,27 @@
+<div class="hotelcard">
+    <!--header card-->
+    <div class="grid--no-gutter">
+
+        <div class="grid__col-12">
+            {{hotelCard.title}}
+        </div>
+
+
+    </div>
+    <!--header card-->
+    <!--listado caarcteristicas-->
+    <div class="grid--no-gutter">
+      <div class="grid__col-12">
+        <ul >
+          <li *ngFor="let item of hotelCard?.activities"> <span>{{item}} </span></li>
+      </ul>
+      </div>
+    </div>
+    <!--/listado caarcteristicas-->
+
+    <div class="grid--no-gutter checkRegimen">
+        <div class="grid__col-12">
+                <input type="radio" name="regimen">Elegir regimen
+        </div>
+    </div>
+</div>
