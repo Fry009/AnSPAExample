@@ -683,6 +683,7 @@ input[type="radio"]:checked {
     position: relative;
     top: 7%;
     left: -1%;
+    margin-left: 7%;
     @include roboto-opcional-12;
 }
 
@@ -762,26 +763,10 @@ div div .valores {
 }
 
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  //text-align: left;
 
-  display: inline-block;
-  border: none;
-  outline: 0;
-  padding: 8px 16px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-align: left;
-  cursor: pointer;
-  white-space: nowrap;
-  margin: 1%;
-  margin-left: 0%;
-
-}
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active, .btnCollapse:hover {
   background-color: #ccc;
 }
 
@@ -798,6 +783,6 @@ div div .valores {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
 }
 
-.active:after {
+.btnCollapse.active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }

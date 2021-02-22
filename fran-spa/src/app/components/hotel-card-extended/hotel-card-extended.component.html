@@ -4,7 +4,8 @@
     <!--imagen>-->
     <div class="grid__col-2">
     <div class="imgEstancia">
-      <img src="./../../../assets/img/img1.png" alt="Girl in a jacket" width="270" height="180">
+      <!-- <img src="./../../../assets/img/img1.png" alt="Girl in a jacket" width="270" height="180"> -->
+      <img src="{{hotelCardExtended.urlImage}}" alt="Girl in a jacket" width="270" height="180">
     </div>
     </div>
     <!--/imagen-->
@@ -16,17 +17,17 @@
             <div class="rutinaDiv">
         <div class="grid__col-12">
             <p>
-              Olvidese de la rutina
+              {{hotelCardExtended.title}}
             </p>
         </div>
             <!--/titulo-->
                 <!--descripcion-->
-        <div class="grid__col-12">
-            <div>Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum primisculus vulputate donec magna nulla montes sagittis. Vel dapibus parturient eros nisi scelerisque praesent potenti phasellus, et senectus felis sollicitudin justo non mi auctor, blandit dictum varius est nunc pellentesque tellus.</div>
+        <div class="grid__col-12" >
+            <div >{{hotelCardExtended.description}}</div>
         </div>
             <!--/descripcion-->
             <div class="grid__col-12">
-              <button class="btnCollapse"><span class="info">Mostrar mas Informacion y Condiciones</span></button>
+              <button #accordeon class="btnCollapse" (click)="toggleThisAccordion(accordeon)"><span class="info">Mostrar mas Informacion y Condiciones</span></button>
               <div class="collapse">
                 <div class="grid--no-gutter">
                   <div class="grid__col-12">
@@ -38,12 +39,9 @@
                   </div>
                 </div>
                 <div class="grid--no-gutter">
-                  <div class="grid__col-12">
-                    <ul style="display:flex; margin: auto;">
-                      <li>Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum primis</li>
-                      <li>Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum primis</li>
-                      <li>Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum primis</li>
-                      <li>Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum primis</li>
+                  <div class="grid__col-12" style="display:flex; margin: auto;">
+                    <ul  *ngFor="let activity of hotelCardExtended.activities">
+                      <li>{{activity}}</li>
                     </ul>
                   </div>
                 </div>
