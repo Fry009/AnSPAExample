@@ -55,7 +55,7 @@ export class HotelCardExtendedComponent implements OnInit {
   toggleThisAccordion(element){
     element.classList.toggle("active");
     var panel = element.nextElementSibling;
-        if (panel.style.display === "block") {
+        if (panel.style.display === "block"|| panel.style.display === "") {
           panel.style.display = "none";
         } else {
           panel.style.display = "block";
