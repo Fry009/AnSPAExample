@@ -27,7 +27,7 @@
         </div>
             <!--/descripcion-->
             <div class="grid__col-12">
-              <button class="btnCollapse"><span class="info">Mostrar mas Informacion y Condiciones</span></button>
+              <button #accordeon class="btnCollapse" (click)="toggleThisAccordion(accordeon)"><span class="info">Mostrar mas Informacion y Condiciones</span></button>
               <div class="collapse">
                 <div class="grid--no-gutter">
                   <div class="grid__col-12">

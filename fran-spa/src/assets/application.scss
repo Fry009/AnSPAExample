@@ -798,6 +798,6 @@ div div .valores {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
 }
 
-.active:after {
+.btnCollapse.active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
